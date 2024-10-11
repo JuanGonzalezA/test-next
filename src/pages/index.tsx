@@ -5,7 +5,9 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home(_props: any) {
+  let variable: number = 1
+
   return (
     <>
       <Head>
@@ -60,9 +62,7 @@ export default function Home() {
             <h2>
               Docs <span>-&gt;</span>
             </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
+            <p>Find in-depth information about Next.js features and&nbsp;API.</p>
           </a>
 
           <a
@@ -74,9 +74,7 @@ export default function Home() {
             <h2>
               Learn <span>-&gt;</span>
             </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
+            <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
           </a>
 
           <a
@@ -88,9 +86,7 @@ export default function Home() {
             <h2>
               Templates <span>-&gt;</span>
             </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
+            <p>Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
           </a>
 
           <a
@@ -102,10 +98,7 @@ export default function Home() {
             <h2>
               Deploy <span>-&gt;</span>
             </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
+            <p>Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
           </a>
         </div>
       </main>
